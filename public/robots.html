@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robots Directives & Crawler Indexing Policy | Compassionate Love of Calvary Ministries</title>
+  <meta name="description" content="Official Search Engine Bot Directives, Crawler Rules, and Indexing Policies for Compassionate Love of Calvary Ministries." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.clm.org.in/robots.html" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-primary: #0B192C;
+      --bg-surface: #1E3E62;
+      --bg-card: rgba(255, 255, 255, 0.05);
+      --text-main: #FFFFFF;
+      --text-muted: #B0C4DE;
+      --gold-primary: #FFD700;
+      --gold-accent: #E6A23C;
+      --success: #28a745;
+      --danger: #ff4d4f;
+      --border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 2.2rem;
+      color: var(--gold-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .brand p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .quick-links a {
+      display: inline-block;
+      margin-left: 0.75rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--gold-accent);
+      color: var(--gold-primary);
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .quick-links a:hover {
+      background: var(--gold-primary);
+      color: var(--bg-primary);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.6rem;
+      color: var(--gold-primary);
+      margin: 1.75rem 0 1rem;
+    }
+
+    p, li {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tag-allowed {
+      color: var(--success);
+      font-weight: 700;
+    }
+
+    .tag-disallowed {
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    ul.code-list {
+      list-style-type: none;
+      margin-top: 0.5rem;
+    }
+
+    ul.code-list li {
+      font-family: monospace;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 0.35rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 0.4rem;
+      font-size: 0.88rem;
+    }
+
+    pre.code-block {
+      background: #050d18;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: #79c0ff;
+      line-height: 1.5;
+    }
+
+    .comment {
+      color: #8b949e;
+    }
+
+    .directive {
+      color: #ff7b72;
+      font-weight: bold;
+    }
+
+    .value {
+      color: #a5d6ff;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--gold-primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Robots &amp; Crawler Indexing Directives</h1>
+        <p>Compassionate Love of Calvary Ministries | Official Search Engine Policy</p>
+      </div>
+      <div class="quick-links">
+        <a href="/robots.txt" target="_blank">View Raw robots.txt</a>
+        <a href="/sitemap.xml" target="_blank">XML Sitemap</a>
+        <a href="/sitemap.html">HTML Sitemap</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Overview &amp; Indexing Guidelines</h2>
+      <p>
+        This document outlines the crawler directives, bot policies, and indexing permissions for <strong>Compassionate Love of Calvary Ministries (CLM)</strong>. All major search engines (including Google, Bing, Yahoo, DuckDuckGo, Baidu, and Yandex) are welcome to index our public ministry content, devotionals, events, sermons, and articles.
+      </p>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <h3><span class="tag-allowed">✔</span> Allowed Public Routes</h3>
+        <p>Crawlers are permitted and encouraged to crawl and index all public ministry pages:</p>
+        <ul class="code-list">
+          <li><code>/ (Home Page)</code></li>
+          <li><code>/about (About Ministry)</code></li>
+          <li><code>/ministries (Ministries &amp; Outreach)</code></li>
+          <li><code>/bible (Holy Bible)</code></li>
+          <li><code>/study (Bible Study)</code></li>
+          <li><code>/devotional (Daily Devotions)</code></li>
+          <li><code>/sermons (Sermons &amp; Media)</code></li>
+          <li><code>/events (Church Events)</code></li>
+          <li><code>/blog (Articles &amp; News)</code></li>
+          <li><code>/media (Gallery &amp; Videos)</code></li>
+          <li><code>/contact (Location &amp; Inquiries)</code></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span class="tag-disallowed">✖</span> Restricted &amp; Protected Routes</h3>
+        <p>Private consoles, authentication portals, and backend APIs must NOT be indexed:</p>
+        <ul class="code-list">
+          <li><code>/admin (Admin Console)</code></li>
+          <li><code>/admin/* (All Admin Editors)</code></li>
+          <li><code>/adminLogin (Authentication Portal)</code></li>
+          <li><code>/api/* (Internal REST Endpoints)</code></li>
+          <li><code>/django-admin/* (Backend Administration)</code></li>
+        </ul>
+      </div>
+    </div>
+
+    <section>
+      <h2>Raw robots.txt Configuration</h2>
+      <p>The active, machine-readable crawler configuration file is located at <a href="/robots.txt" style="color: var(--gold-primary);">https://www.clm.org.in/robots.txt</a>.</p>
+      <pre class="code-block">
+<span class="comment"># ==============================================================================</span>
+<span class="comment"># Robots.txt for Compassionate Love of Calvary Ministries</span>
+<span class="comment"># ==============================================================================</span>
+
+<span class="directive">User-agent:</span> <span class="value">*</span>
+<span class="directive">Allow:</span> <span class="value">/</span>
+<span class="directive">Allow:</span> <span class="value">/about</span>
+<span class="directive">Allow:</span> <span class="value">/ministries</span>
+<span class="directive">Allow:</span> <span class="value">/bible</span>
+<span class="directive">Allow:</span> <span class="value">/study</span>
+<span class="directive">Allow:</span> <span class="value">/devotional</span>
+<span class="directive">Allow:</span> <span class="value">/sermons</span>
+<span class="directive">Allow:</span> <span class="value">/events</span>
+<span class="directive">Allow:</span> <span class="value">/blog</span>
+<span class="directive">Allow:</span> <span class="value">/media</span>
+<span class="directive">Allow:</span> <span class="value">/contact</span>
+
+<span class="directive">Disallow:</span> <span class="value">/admin</span>
+<span class="directive">Disallow:</span> <span class="value">/admin/</span>
+<span class="directive">Disallow:</span> <span class="value">/admin/*</span>
+<span class="directive">Disallow:</span> <span class="value">/adminLogin</span>
+<span class="directive">Disallow:</span> <span class="value">/api/</span>
+<span class="directive">Disallow:</span> <span class="value">/django-admin/</span>
+
+<span class="directive">Sitemap:</span> <span class="value">https://www.clm.org.in/sitemap.xml</span>
+<span class="directive">Host:</span> <span class="value">https://www.clm.org.in</span>
+      </pre>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Compassionate Love of Calvary Ministries. All rights reserved. | <a href="/">Return to Homepage</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>

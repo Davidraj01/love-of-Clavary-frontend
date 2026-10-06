@@ -1,0 +1,100 @@
+# ==============================================================================
+# Robots.txt for Compassionate Love of Calvary Ministries
+# Website: https://www.clm.org.in
+# Generated for Search Engine Optimization (SEO) & Web Crawler Directives
+# ==============================================================================
+
+User-agent: *
+# Allow indexing of all public ministry pages and static assets
+Allow: /
+Allow: /about
+Allow: /ministries
+Allow: /bible
+Allow: /study
+Allow: /devotional
+Allow: /sermons
+Allow: /events
+Allow: /blog
+Allow: /blog/*
+Allow: /media
+Allow: /contact
+Allow: /sitemap.xml
+Allow: /sitemap.html
+Allow: /robots.html
+Allow: /assets/
+Allow: /logo.png
+Allow: /favicon.svg
+
+# Disallow private administrative consoles, auth endpoints, and internal APIs
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /adminLogin
+Disallow: /api/
+Disallow: /django-admin/
+
+# Specific major crawler directives
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /adminLogin
+Disallow: /api/
+Disallow: /django-admin/
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /assets/
+Allow: /logo.png
+Allow: /favicon.svg
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /adminLogin
+Disallow: /api/
+Disallow: /django-admin/
+Crawl-delay: 1
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /adminLogin
+Disallow: /api/
+Disallow: /django-admin/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /adminLogin
+Disallow: /api/
+Disallow: /django-admin/
+
+User-agent: YandexBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/*
+Disallow: /adminLogin
+Disallow: /api/
+Disallow: /django-admin/
+Crawl-delay: 2
+
+# XML Sitemap Location
+Sitemap: https://www.clm.org.in/sitemap.xml
+
+# HTML Sitemap Reference
+# https://www.clm.org.in/sitemap.html
+
+# Crawler Transparency Report & Robots Documentation
+# https://www.clm.org.in/robots.html
+
+# Host
+Host: https://www.clm.org.in

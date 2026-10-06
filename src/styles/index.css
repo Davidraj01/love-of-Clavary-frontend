@@ -1,0 +1,430 @@
+@import './theme.css';
+
+/* ============================================================================
+   GLOBAL RESET & MODERN VIEWPORT TOUCH DEFAULTS
+============================================================================ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: var(--bg-primary);
+  line-height: var(--body-line-height, 1.65);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================================================
+   RESPONSIVE FLUID TYPOGRAPHY
+============================================================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--heading-weight, 600);
+  line-height: 1.22;
+  color: var(--text-dark);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: clamp(2rem, 5.2vw + 0.5rem, 4.2rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.65rem, 3.8vw + 0.4rem, 2.85rem);
+  letter-spacing: -0.015em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.4vw + 0.3rem, 2rem);
+  letter-spacing: -0.01em;
+}
+
+h4 {
+  font-size: clamp(1.1rem, 1.8vw + 0.2rem, 1.45rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 1.4vw + 0.15rem, 1.25rem);
+}
+
+h6 {
+  font-size: clamp(0.9rem, 1.2vw + 0.1rem, 1.1rem);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  font-size: clamp(0.95rem, 1.05vw, 1.08rem);
+  line-height: 1.7;
+  word-wrap: break-word;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast), opacity var(--transition-fast);
+  touch-action: manipulation;
+}
+
+/* ============================================================================
+   RESPONSIVE IMAGES, VIDEOS, IFRAMES & MEDIA
+============================================================================ */
+img, picture, svg, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+iframe {
+  max-width: 100%;
+}
+
+/* 16:9 Responsive Video Wrapper */
+.video-responsive-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: #000000;
+  box-shadow: var(--shadow-md);
+}
+
+.video-responsive-wrap iframe,
+.video-responsive-wrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
+/* Legacy Aspect Ratio Fallback for older WebViews */
+@supports not (aspect-ratio: 16 / 9) {
+  .video-responsive-wrap {
+    padding-top: 56.25%;
+    height: 0;
+  }
+}
+
+/* ============================================================================
+   FAST TOUCH INTERACTIONS & FORM CONTROLS
+============================================================================ */
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  touch-action: manipulation;
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+button:active, .btn:active, .social-icon-btn:active, .donation-tab-btn:active {
+  transform: scale(0.97);
+}
+
+/* ============================================================================
+   RESPONSIVE CONTAINER SYSTEM WITH SAFE AREA INSETS
+============================================================================ */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+}
+
+/* Section Spacing */
+.section {
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: var(--text-light);
+}
+
+.section-dark p {
+  color: var(--text-light-muted);
+}
+
+.section-cream {
+  background-color: var(--bg-secondary);
+}
+
+/* Section Header Utility */
+.section-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto clamp(2rem, 4vw, 3.5rem) auto;
+  padding: 0 0.5rem;
+}
+
+.section-badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: clamp(0.72rem, 1vw, 0.82rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+  margin-bottom: 0.75rem;
+  padding: 0.35rem 1.1rem;
+  background: var(--gold-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 1.3vw, 1.18rem);
+  line-height: 1.7;
+}
+
+/* ============================================================================
+   RESPONSIVE BUTTONS & TOUCH TARGETS
+============================================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.8rem 1.75rem;
+  min-height: 44px; /* Accessible minimum touch target */
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
+  border: none;
+  outline: none;
+  text-align: center;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    white-space: normal;
+  }
+}
+
+.btn-gold {
+  background: var(--gold-gradient);
+  color: var(--bg-darker);
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+  filter: brightness(1.05);
+}
+
+.btn-gold:active {
+  transform: scale(0.97);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: var(--gold-primary);
+  border: 1.5px solid var(--gold-primary);
+}
+
+.btn-outline-gold:hover {
+  background: var(--gold-primary);
+  color: var(--bg-darker);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-outline-gold:active {
+  transform: scale(0.97);
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: var(--text-light);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light:active {
+  transform: scale(0.97);
+}
+
+.btn-navy {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.btn-navy:hover {
+  background: var(--bg-dark-card);
+  border-color: var(--gold-primary);
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.84rem;
+  min-height: 38px;
+}
+
+.btn-lg {
+  padding: 0.95rem 2rem;
+  font-size: 1.02rem;
+  min-height: 48px;
+}
+
+/* ============================================================================
+   MODERN RESPONSIVE GRIDS
+============================================================================ */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1rem, 2vw, 1.75rem);
+}
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================================
+   ANIMATIONS & PERFORMANCE OPTIMIZATIONS
+============================================================================ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.04); }
+}
+
+@keyframes floatParticle {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(180deg); }
+  100% { transform: translateY(0px) rotate(360deg); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

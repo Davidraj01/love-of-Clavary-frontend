@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                            http://www.google.com/schemas/sitemap-image/1.1
+                            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.clm.org.in/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.clm.org.in/logo.png</image:loc>
+      <image:title>Compassionate Love of Calvary Ministries</image:title>
+      <image:caption>Compassionate Love of Calvary Ministries - Chengalpattu</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Ministry -->
+  <url>
+    <loc>https://www.clm.org.in/about</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Ministries & Outreach Programs -->
+  <url>
+    <loc>https://www.clm.org.in/ministries</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Holy Bible Reading & Chapters -->
+  <url>
+    <loc>https://www.clm.org.in/bible</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Bible Study & Spiritual Growth -->
+  <url>
+    <loc>https://www.clm.org.in/study</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Daily Devotionals -->
+  <url>
+    <loc>https://www.clm.org.in/devotional</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Sermons, Audio & Video Messages -->
+  <url>
+    <loc>https://www.clm.org.in/sermons</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Church Events & Special Gatherings -->
+  <url>
+    <loc>https://www.clm.org.in/events</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Ministry Blog & Articles -->
+  <url>
+    <loc>https://www.clm.org.in/blog</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Media, Photo Gallery & Worship Highlights -->
+  <url>
+    <loc>https://www.clm.org.in/media</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contact & Church Location -->
+  <url>
+    <loc>https://www.clm.org.in/contact</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- HTML Sitemap Page for Enhanced Crawling & User Navigation -->
+  <url>
+    <loc>https://www.clm.org.in/sitemap.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Robots Crawler Directives & Transparency Documentation -->
+  <url>
+    <loc>https://www.clm.org.in/robots.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
