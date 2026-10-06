@@ -9,12 +9,12 @@
 
   <!-- Home Page -->
   <url>
-    <loc>https://www.clm.org.in/</loc>
+    <loc>https://www.loveofcalvary.org/</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.clm.org.in/logo.png</image:loc>
+      <image:loc>https://www.loveofcalvary.org/logo.png</image:loc>
       <image:title>Compassionate Love of Calvary Ministries</image:title>
       <image:caption>Compassionate Love of Calvary Ministries - Chengalpattu</image:caption>
     </image:image>
@@ -22,7 +22,7 @@
 
   <!-- About Ministry -->
   <url>
-    <loc>https://www.clm.org.in/about</loc>
+    <loc>https://www.loveofcalvary.org/about</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -30,7 +30,7 @@
 
   <!-- Ministries & Outreach Programs -->
   <url>
-    <loc>https://www.clm.org.in/ministries</loc>
+    <loc>https://www.loveofcalvary.org/ministries</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -38,7 +38,7 @@
 
   <!-- Holy Bible Reading & Chapters -->
   <url>
-    <loc>https://www.clm.org.in/bible</loc>
+    <loc>https://www.loveofcalvary.org/bible</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
@@ -46,7 +46,7 @@
 
   <!-- Bible Study & Spiritual Growth -->
   <url>
-    <loc>https://www.clm.org.in/study</loc>
+    <loc>https://www.loveofcalvary.org/study</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -54,7 +54,7 @@
 
   <!-- Daily Devotionals -->
   <url>
-    <loc>https://www.clm.org.in/devotional</loc>
+    <loc>https://www.loveofcalvary.org/devotional</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
@@ -62,7 +62,7 @@
 
   <!-- Sermons, Audio & Video Messages -->
   <url>
-    <loc>https://www.clm.org.in/sermons</loc>
+    <loc>https://www.loveofcalvary.org/sermons</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -70,7 +70,7 @@
 
   <!-- Church Events & Special Gatherings -->
   <url>
-    <loc>https://www.clm.org.in/events</loc>
+    <loc>https://www.loveofcalvary.org/events</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
@@ -78,7 +78,7 @@
 
   <!-- Ministry Blog & Articles -->
   <url>
-    <loc>https://www.clm.org.in/blog</loc>
+    <loc>https://www.loveofcalvary.org/blog</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
@@ -86,7 +86,7 @@
 
   <!-- Media, Photo Gallery & Worship Highlights -->
   <url>
-    <loc>https://www.clm.org.in/media</loc>
+    <loc>https://www.loveofcalvary.org/media</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
@@ -94,7 +94,7 @@
 
   <!-- Contact & Church Location -->
   <url>
-    <loc>https://www.clm.org.in/contact</loc>
+    <loc>https://www.loveofcalvary.org/contact</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -102,7 +102,7 @@
 
   <!-- HTML Sitemap Page for Enhanced Crawling & User Navigation -->
   <url>
-    <loc>https://www.clm.org.in/sitemap.html</loc>
+    <loc>https://www.loveofcalvary.org/sitemap.html</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>
@@ -110,7 +110,7 @@
 
   <!-- Robots Crawler Directives & Transparency Documentation -->
   <url>
-    <loc>https://www.clm.org.in/robots.html</loc>
+    <loc>https://www.loveofcalvary.org/robots.html</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>

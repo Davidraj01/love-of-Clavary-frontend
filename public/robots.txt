@@ -1,6 +1,6 @@
 # ==============================================================================
 # Robots.txt for Compassionate Love of Calvary Ministries
-# Website: https://www.clm.org.in
+# Website: https://www.loveofcalvary.org/
 # Generated for Search Engine Optimization (SEO) & Web Crawler Directives
 # ==============================================================================
 
@@ -88,13 +88,13 @@ Disallow: /django-admin/
 Crawl-delay: 2
 
 # XML Sitemap Location
-Sitemap: https://www.clm.org.in/sitemap.xml
+Sitemap: https://www.loveofcalvary.org/sitemap.xml
 
 # HTML Sitemap Reference
-# https://www.clm.org.in/sitemap.html
+# https://www.loveofcalvary.org/sitemap.html
 
 # Crawler Transparency Report & Robots Documentation
-# https://www.clm.org.in/robots.html
+# https://www.loveofcalvary.org/robots.html
 
 # Host
-Host: https://www.clm.org.in
+Host: https://www.loveofcalvary.org
