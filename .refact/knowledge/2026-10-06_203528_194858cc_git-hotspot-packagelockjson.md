@@ -6,7 +6,7 @@ tags:
 - git
 - hotspot
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-07
 filenames:
 - package-lock.json
 links: []
@@ -14,7 +14,7 @@ kind: code
 status: proposed
 superseded_by: null
 deprecated_at: null
-review_after: 2026-10-06
+review_after: 2026-10-07
 source_chat_id: null
 created_at: 2026-10-06T15:05:28.949304400+00:00
 summary: null

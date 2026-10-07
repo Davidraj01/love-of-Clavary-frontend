@@ -108,8 +108,8 @@ export const AdminSEOEditor = () => {
       if (!editingId && (!prev.slug || prev.slug === currentGeneratedSlug)) {
         updated.slug = newSlug;
         // Auto-generate canonical SEO URL
-        if (!prev.canonical_url || prev.canonical_url === `https://www.clm.org.in/blog/${prev.slug}`) {
-          updated.canonical_url = newSlug ? `https://www.clm.org.in/blog/${newSlug}` : '';
+        if (!prev.canonical_url || prev.canonical_url === `https://www.loveofcalvary.org/blog/${prev.slug}`) {
+          updated.canonical_url = newSlug ? `https://www.loveofcalvary.org/blog/${newSlug}` : '';
         }
       }
       
@@ -126,8 +126,8 @@ export const AdminSEOEditor = () => {
     setFormData(prev => ({
       ...prev,
       slug: cleanSlug,
-      canonical_url: (!prev.canonical_url || prev.canonical_url === `https://www.clm.org.in/blog/${prev.slug}`)
-        ? (cleanSlug ? `https://www.clm.org.in/blog/${cleanSlug}` : '')
+      canonical_url: (!prev.canonical_url || prev.canonical_url === `https://www.loveofcalvary.org/blog/${prev.slug}`)
+        ? (cleanSlug ? `https://www.loveofcalvary.org/blog/${cleanSlug}` : '')
         : prev.canonical_url
     }));
   };
@@ -992,7 +992,7 @@ export const AdminSEOEditor = () => {
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                       <span style={{ padding: '0.65rem 0.75rem', background: '#E2E8F0', border: '1px solid #CBD5E1', borderRight: 'none', borderRadius: '6px 0 0 6px', fontSize: '0.82rem', color: '#64748B' }}>
-                        https://www.clm.org.in/blog/
+                        https://www.loveofcalvary.org/blog/
                       </span>
                       <input
                         type="text"

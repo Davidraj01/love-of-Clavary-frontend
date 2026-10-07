@@ -27,8 +27,8 @@ export const PageSEOSection = ({ pageIdentifier, defaultTitle = '', defaultDesc 
           // ==========================================================
           const pageTitle = data.meta_title || defaultTitle || `${pageIdentifier.charAt(0).toUpperCase() + pageIdentifier.slice(1)} | Compassionate Love of Calvary Ministries`;
           const pageDescription = data.meta_description || defaultDesc || "Compassionate Love of Calvary Ministries - Rooted in prayer, anchored in Biblical truth, and sharing the boundless love of Christ.";
-          const canonicalUrl = data.canonical_url || `https://www.clm.org.in${pageIdentifier === 'home' ? '' : '/' + pageIdentifier}`;
-          const ogImg = data.og_image_url || data.featured_image_url || 'https://www.clm.org.in/logo.png';
+          const canonicalUrl = data.canonical_url || `https://www.loveofcalvary.org${pageIdentifier === 'home' ? '' : '/' + pageIdentifier}`;
+          const ogImg = data.og_image_url || data.featured_image_url || 'https://www.loveofcalvary.org/logo.png';
 
           // Update Document Title
           document.title = pageTitle;
@@ -112,7 +112,7 @@ export const PageSEOSection = ({ pageIdentifier, defaultTitle = '', defaultDesc 
             "headline": pageTitle,
             "description": pageDescription,
             "url": canonicalUrl,
-            "logo": "https://www.clm.org.in/logo.png",
+            "logo": "https://www.loveofcalvary.org/logo.png",
             "image": getMediaUrl(ogImg),
             "address": {
               "@type": "PostalAddress",

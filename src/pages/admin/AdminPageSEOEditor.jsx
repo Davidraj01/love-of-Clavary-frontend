@@ -213,7 +213,7 @@ export const AdminPageSEOEditor = () => {
       canonical_url: canonical,
       og_title: metaTitle,
       og_description: metaDesc,
-      og_image_url: prev.og_image_url || prev.featured_image_url || 'https://www.clm.org.in/logo.png',
+      og_image_url: prev.og_image_url || prev.featured_image_url || 'https://www.loveofcalvary.org/logo.png',
       meta_keywords: `${pageObj.name.toLowerCase()}, calvary ministries, faith, prayer, chengalpattu, christian worship`
     }));
   };
@@ -227,8 +227,8 @@ export const AdminPageSEOEditor = () => {
       "headline": seoData.meta_title || `${currentPageObj.name} | Calvary Ministries`,
       "description": seoData.meta_description || "Compassionate Love of Calvary Ministries",
       "url": canonical,
-      "logo": "https://www.clm.org.in/logo.png",
-      "image": seoData.og_image_url || seoData.featured_image_url || "https://www.clm.org.in/logo.png",
+      "logo": "https://www.loveofcalvary.org/logo.png",
+      "image": seoData.og_image_url || seoData.featured_image_url || "https://www.loveofcalvary.org/logo.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "81/5, 6th Street, Shanthi Nagar",
